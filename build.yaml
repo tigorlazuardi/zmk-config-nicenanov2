@@ -19,6 +19,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: lily58_left
+    shield: cradio_left
+    snippet: zmk-usb-logging
   - board: nice_nano_v2
-    shield: lily58_right
+    shield: cradio_right
+    snippet: zmk-usb-logging
