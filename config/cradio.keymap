@@ -52,15 +52,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │ HOME     │ UP       │ END      │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &kp HOME  &kp UP  &kp END      &trans
+            &none     &none     &none     &none     &none         &none     &kp HOME  &kp UP  &kp END      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │ LEFT     │ DOWN       │ RIGHT    │        │
-            &trans     &trans     &trans     &trans     &trans         &trans     &kp LEFT   &kp DOWN   &kp RIGHT   &trans
+            HRML(A,     S,         D,         F)        &none         &none     &kp LEFT   &kp DOWN   &kp RIGHT   &none
         //├──────────┼─────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │         │          │          │          │   │          │          │          │          │          │
-           &caps_word  &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+           &caps_word  &none     &none     &none     &none         &none     &none     &none     &none     &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans     &trans
+                                             &none     &kp ESC        &none     &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -68,16 +68,16 @@
         left_layer {        
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  [       │  {       │  }       │  ]       │   │  - _     │  7       │  8       │  9       │  ~       │
-            &trans     &kp LBKT   &kp LBRC   &kp RBRC   &kp RBKT       &kp MINUS   &kp N7    &kp N8    &kp N9     &kp TILDE
+        //│          │  [       │  ]       │  (       │  )       │   │  - _     │  7       │  8       │  9       │  ` ~     │
+            &none     &kp LBKT   &kp RBKT   &kp RBRC   &kp RBKT       &kp MINUS   &kp N7    &kp N8    &kp N9     &kp GRAVE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │  + =     │  4       │  5       │  6       │  `       │
-            &trans      &trans    &trans     &trans      &trans        &kp EQUAL  &kp N4     &kp N5     &kp N6     &kp GRAVE
+        //│          │          │          │          │          │   │  + =     │  4       │  5       │  6       │  ' "     │
+            HRML(A,     S,         D,         F)         &none        &kp EQUAL  &kp N4     &kp N5     &kp N6     &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  1       │  2       │  3       │          │
-            &kp K_UNDO    &kp K_CUT  &kp K_COPY  &kp K_PASTE &trans    &kp N0     &kp N1     &kp N2     &kp N3     &trans
+            &none       &none     &none       &none      &none          &kp N0     &kp N1     &kp N2     &kp N3     &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &none     &none            &none     &none    
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -86,15 +86,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
+           &sys_reset  &none     &none     &none    &bt BT_SEL 0    &none     &none     &none     &none    &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
+          &bootloader  &none     &none     &none    &bt BT_SEL 1    &none     &none     &none     &none    &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-           &studio_unlock  &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
+           &studio_unlock  &none     &none    &bt BT_CLR &bt BT_SEL 2    &none     &none     &none     &none     &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &none     &none         &none     &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
