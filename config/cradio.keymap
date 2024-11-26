@@ -68,11 +68,11 @@
         left_layer {        
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  [       │  {       │  }       │  ]       │   │  - _       │  7       │  8       │  9       │  ~       │
-            &trans     &kp LBKT   &kp LBRC   &kp RBRC   &kp RBKT           &kp MINUS   &kp N8   &kp N9         &kp TILDE
+        //│          │  [       │  {       │  }       │  ]       │   │  - _     │  7       │  8       │  9       │  ~       │
+            &trans     &kp LBKT   &kp LBRC   &kp RBRC   &kp RBKT       &kp MINUS   &kp N7    &kp N8    &kp N9     &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  + =     │  4       │  5       │  6       │  `       │
-            &trans      &trans    &trans     &trans      &trans        &kp EQUAL &kp N4     &kp N5     &kp N6     &kp GRAVE
+            &trans      &trans    &trans     &trans      &trans        &kp EQUAL  &kp N4     &kp N5     &kp N6     &kp GRAVE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  1       │  2       │  3       │          │
             &kp K_UNDO    &kp K_CUT  &kp K_COPY  &kp K_PASTE &trans    &kp N0     &kp N1     &kp N2     &kp N3     &trans
