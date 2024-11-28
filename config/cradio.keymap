@@ -36,7 +36,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
            &mt LALT Z   &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &mt RALT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &mt LGUI SPACE  &kp LSHIFT      &kp RCTRL   &to 1
+                                            &kp LGUI  &mt LSHIFT SPACE  &kp RCTRL   &to 1
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -93,3 +93,5 @@
         };
     };
 };
+
+julianto jiwa 
