@@ -43,7 +43,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
            &mt LALT Z   &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &mt RALT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp LGUI   &kp LSHIFT      &kp RCTRL   &to 1
+                                            &mt LGUI SPC  &kp LSHIFT      &kp RCTRL   &to 1
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -99,4 +99,5 @@
             >;
         };
     };
-};
+
+mantapjiwa
