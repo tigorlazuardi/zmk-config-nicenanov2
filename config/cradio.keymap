@@ -63,7 +63,7 @@
         //│   ~      │    |     │          │          │          │   │   +      │    _     │   ~      │ {        │  }       │
            &kp TILDE   &kp PIPE     &none      &none       &none        &kp PLUS  &kp UNDER  &kp TILDE  &kp LBRC  &kp RBRC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &trans     &trans          &trans     &trans
+                                            &bootloader     &trans          &trans     &bootloader
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -82,7 +82,7 @@
         //│          │          │          │          │          │   │          │ HOME     │          │  END     │          │
             &none     &none     &none      &none       &none           &none      &kp HOME   &none      &kp END      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &trans     &trans          &trans     &trans
+                                            &bootloader     &trans          &trans     &bootloader
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -99,7 +99,7 @@
         //│          │          │          │          │ PROFILE 2│   │          │  1       │  2       │  3       │          │
             &none       &none     &none       &none     &bt BT_SEL 2     &none    &kp N1     &kp N2     &kp N3     &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                              &trans     &trans          &trans     &trans
+                                              &bootloader     &trans          &trans     &bootloader
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
