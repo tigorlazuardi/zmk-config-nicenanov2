@@ -1,17 +1,5 @@
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  prepare:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: inject environment variables to keymaps
-        env:
-          SUBMASTER_MACRO_BINDINGS: ${{ secrets.SUBMASTER_MACRO_BINDINGS }}
-          MASTER_MACRO_BINDINGS: ${{ secrets.MASTER_MACRO_BINDINGS }}
-        run: |
-          sed -i "s#// __SUBMASTER_MACRO_BINDINGS__#${SUBMASTER_MACRO_BINDINGS}#" config/cradio.keymap
-          sed -i "s#// __MASTER_MACRO_BINDINGS__#${MASTER_MACRO_BINDINGS}#" config/cradio.keymap
   build:
-    needs: prepare
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
