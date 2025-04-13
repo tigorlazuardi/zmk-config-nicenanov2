@@ -4,6 +4,7 @@ jobs:
   prepare:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: inject environment variables to keymaps
         env:
           SUBMASTER_MACRO_BINDINGS: ${{ secrets.SUBMASTER_MACRO_BINDINGS }}
