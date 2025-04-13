@@ -1,7 +1,7 @@
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  build:
+  prepare:
     runs-on: ubuntu-latest
     steps:
       - name: inject environment variables to keymaps
@@ -11,5 +11,6 @@ jobs:
         run: |
           sed -i "s#// __SUBMASTER_MACRO_BINDINGS__#${SUBMASTER_MACRO_BINDINGS}#" config/cradio.keymap
           sed -i "s#// __MASTER_MACRO_BINDINGS__#${MASTER_MACRO_BINDINGS}#" config/cradio.keymap
-      - name: Build User Config
-        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+  build:
+    needs: prepare
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
