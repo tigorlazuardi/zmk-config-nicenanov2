@@ -71,7 +71,7 @@
 &none     &kp UP_ARROW  &none      &kp PG_UP  &none          &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB3         &mkp MB2
 &kp LEFT  &kp DOWN      &kp RIGHT  &kp PG_DN  &none          &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
 &none     &none         &none      &none      &none          &none           &mkp MB4        &mkp MB5        &none            &none
-                                   &trans     &bootloader    &trans          &trans
+                                   &trans     &bootloader    &mkp MB1        &mkp MB2
             >;
 
             label = "Navigation Layer";
