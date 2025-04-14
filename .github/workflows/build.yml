@@ -1,5 +1,14 @@
-on: [push, pull_request, workflow_dispatch]
+# on: [push, pull_request, workflow_dispatch]
 
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      runs-on:
+        type: string
+        default: '["self-hosted"]'
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
