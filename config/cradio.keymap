@@ -86,6 +86,42 @@
             key-positions = <18 17>;
             layers = <0>;
         };
+
+        right_win {
+            bindings = <&sk RIGHT_WIN>;
+            key-positions = <27 28>;
+            layers = <0>;
+        };
+
+        right_alt {
+            bindings = <&sk RIGHT_ALT>;
+            key-positions = <27 26>;
+            layers = <0>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <3 4>;
+            layers = <0>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <13 14>;
+            layers = <0>;
+        };
+
+        copy_term {
+            bindings = <&kp LC(LS(C))>;
+            key-positions = <6 5>;
+            layers = <0>;
+        };
+
+        paste_term {
+            bindings = <&kp LC(LS(V))>;
+            key-positions = <15 16>;
+            layers = <0>;
+        };
     };
 
     keymap {
