@@ -52,8 +52,8 @@
             layers = <0>;
         };
 
-        left_win {
-            bindings = <&sk LEFT_WIN>;
+        sticky_wm_layer_left {
+            bindings = <&sl 8>;
             key-positions = <21 22>;
             layers = <0>;
         };
@@ -87,8 +87,8 @@
             layers = <0>;
         };
 
-        right_win {
-            bindings = <&sk RIGHT_WIN>;
+        right_wm_enter_layer {
+            bindings = <&sl 8>;
             key-positions = <27 28>;
             layers = <0>;
         };
@@ -121,6 +121,24 @@
             bindings = <&kp LC(LS(V))>;
             key-positions = <15 16>;
             layers = <0>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <1 2>;
+            layers = <0>;
+        };
+
+        left_win {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <21 22>;
+            layers = <8>;
+        };
+
+        right_win {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <28 27>;
+            layers = <8>;
         };
     };
 
@@ -213,6 +231,15 @@
             >;
 
             label = "Gaming Number Layer";
+        };
+
+        wm_layer {
+            bindings = <
+&kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp LG(Y)   &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(P)
+&kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp G        &kp LG(N0)  &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &kp LG(SEMI)
+&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp LG(N)   &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(FSLH)
+                                 &trans     &trans       &trans      &trans
+            >;
         };
     };
 
