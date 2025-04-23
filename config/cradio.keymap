@@ -36,19 +36,19 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <2 3>;
+            key-positions = <0 1>;
             layers = <0>;
         };
 
         left_ctrl {
             bindings = <&sk LEFT_CONTROL>;
-            key-positions = <12 13>;
+            key-positions = <10 11>;
             layers = <0>;
         };
 
         left_shift {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <11 12>;
+            key-positions = <20 21>;
             layers = <0>;
         };
 
@@ -60,7 +60,7 @@
 
         grave {
             bindings = <&kp GRAVE>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             layers = <0>;
         };
 
@@ -71,19 +71,19 @@
 
         quote {
             bindings = <&kp SQT>;
-            key-positions = <19 18>;
+            key-positions = <18 17>;
             layers = <0>;
         };
 
         right_ctrl {
             bindings = <&sk RIGHT_CONTROL>;
-            key-positions = <16 17>;
+            key-positions = <18 19>;
             layers = <0>;
         };
 
         right_shift {
             bindings = <&sk RIGHT_SHIFT>;
-            key-positions = <18 17>;
+            key-positions = <29 28>;
             layers = <0>;
         };
 
@@ -125,7 +125,7 @@
 
         tilde {
             bindings = <&kp TILDE>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             layers = <0>;
         };
 
@@ -152,6 +152,30 @@
             key-positions = <25 26>;
             layers = <0>;
         };
+
+        left_alt {
+            bindings = <&sk LEFT_ALT>;
+            key-positions = <23 22>;
+            layers = <0>;
+        };
+
+        double_quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <16 17>;
+            layers = <0>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <7 6>;
+            layers = <0>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -162,7 +186,7 @@
 &kp Q  &kp W  &kp E  &kp R         &kp T          &kp Y            &kp U        &kp I      &kp O    &kp P
 &kp A  &kp S  &kp D  &kp F         &kp G          &kp H            &kp J        &kp K      &kp L    &kp SEMICOLON
 &kp Z  &kp X  &kp C  &kp V         &kp B          &kp N            &kp M        &kp COMMA  &kp DOT  &kp FSLH
-                     &lt 1 ESCAPE  &lt 2 SPACE    &lt 3 BACKSPACE  &lt 4 ENTER
+                     &lt 2 ESCAPE  &lt 1 SPACE    &lt 3 BACKSPACE  &lt 4 ENTER
             >;
 
             label = "Default Layer";
