@@ -216,10 +216,10 @@
 
         navigation_layer {
             bindings = <
-&kp HOME  &none     &kp UP_ARROW    &none            &kp END        &mkp MB4     &mkp LCLK       &mmv MOVE_UP    &mkp MB3         &mkp MB2
-&none     &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none          &mkp MB5     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP
-&none     &none     &none           &none            &none          &none        &none           &none           &none            &msc SCRL_DOWN
-                                    &bootloader      &bootloader    &bootloader  &bootloader
+&kp HOME  &none     &kp UP_ARROW    &none            &kp END        &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp MB3         &mkp MB2
+&none     &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none          &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB4
+&none     &none     &none           &none            &none          &none           &none           &none           &none            &mkp MB5
+                                    &bootloader      &bootloader    &bootloader     &bootloader
             >;
 
             label = "Navigation Layer";
