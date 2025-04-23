@@ -150,7 +150,7 @@
 &kp Q  &kp W  &kp E  &kp R         &kp T          &kp Y            &kp U        &kp I      &kp O    &kp P
 &kp A  &kp S  &kp D  &kp F         &kp G          &kp H            &kp J        &kp K      &kp L    &kp SEMICOLON
 &kp Z  &kp X  &kp C  &kp V         &kp B          &kp N            &kp M        &kp COMMA  &kp DOT  &kp FSLH
-                     &lt 4 ESCAPE  &lt 2 SPACE    &lt 1 BACKSPACE  &lt 3 ENTER
+                     &lt 2 ESCAPE  &lt 4 SPACE    &lt 1 BACKSPACE  &lt 3 ENTER
             >;
 
             label = "Default Layer";
@@ -180,10 +180,10 @@
 
         navigation_layer {
             bindings = <
-&mkp MB2        &mkp MB3         &mmv MOVE_UP    &mkp MB1         &msc SCRL_UP      &kp PAGE_UP    &none     &kp UP_ARROW    &none            &none
-&none           &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &kp PAGE_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&msc SCRL_LEFT  &msc SCRL_RIGHT  &mkp MB5        &mkp MB4         &none             &kp HOME       &kp END   &none           &none            &none
-                                                 &mkp MB2         &mkp MB1          &bootloader    &trans
+&kp HOME  &none     &kp UP_ARROW    &none            &kp END    &mkp MB4     &mkp LCLK       &mmv MOVE_UP    &mkp MB3         &mkp MB2
+&none     &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none      &mkp MB5     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP
+&none     &none     &none           &none            &none      &none        &none           &none           &none            &msc SCRL_DOWN
+                                    &trans           &trans     &bootloader  &trans
             >;
 
             label = "Navigation Layer";
